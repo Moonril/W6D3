@@ -7,7 +7,7 @@
 @import 'animations';
 
 header {
-    background-color: $bg-color;
+    background-color: $bg-hero;
     font-style: $global-font;
     color: $font-color;
     display: flex;
@@ -46,7 +46,9 @@ main {
         @include boxStyles(blue);
         @include flex();
     }
+    /* & > div {
 
+    } */
 }
 
 
