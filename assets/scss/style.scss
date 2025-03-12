@@ -1,0 +1,52 @@
+@import 'reset';
+@import 'mixins';
+@import 'colors';
+@import 'font';
+@import 'spaces';
+@import 'buttons';
+@import 'animations';
+
+header {
+    background-color: $bg-color;
+    font-style: $global-font;
+    color: $font-color;
+    display: flex;
+    flex-direction: column;
+    padding: $paddings;
+
+    a {
+        text-decoration: none;
+        color: $font-color;
+        &:hover {
+            color: $link-hover;
+        }
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid black;
+    }
+    ul {
+        display: flex;
+        margin: $margins;
+        li {
+            padding: $paddings;
+        }
+    }
+    h1 {
+        margin: $margins;
+        font-size: $title-big;
+    }
+
+}
+
+main {
+    display: flex;
+    .box {
+        @include boxStyles(blue);
+        @include flex();
+    }
+
+}
+
+

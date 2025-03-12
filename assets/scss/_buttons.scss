@@ -1,0 +1,16 @@
+$blue: #0e6cff;
+$orange: #ff8700;
+$green: #4caf50;
+$colors: $blue, $orange, $green;
+
+@each $color in $colors {
+    .bg-#{$color} {
+        background-color: $color;
+    }
+
+    .btn-#{$color} {
+        background-color: $color;
+    }
+}
+
+// questo crea delle classi .bg-
